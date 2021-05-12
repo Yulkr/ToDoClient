@@ -31,6 +31,7 @@ public class Main extends Application {
         primaryStage.show();
 
     }
+    /*
     public void showHomeScreenOverview() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("/views/HomeScreen.fxml"));
@@ -38,13 +39,13 @@ public class Main extends Application {
         Scene scene = new Scene(homeScreenOverview);
         primaryStage.setScene(scene);
 
-
-
     }
+
+     */
     public void showZadachHomeOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("views/MainScene.fxml"));
+            loader.setLocation(Main.class.getResource("views/HomeScreen.fxml"));
             AnchorPane teatrOverview =(AnchorPane) loader.load();
             rootLayout.setCenter(teatrOverview);
             HomeScreenController controller = loader.getController();
